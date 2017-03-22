@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 var inProduction = (process.env.NODE_ENV === 'production');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 
 module.exports = {
@@ -12,7 +13,8 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, './dist/assets'),
+    publicPath: '/assets',
     filename: 'main.js'
   },
   module: {
@@ -32,6 +34,20 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('styles.css')
-  ]
+    new ExtractTextPlugin('styles.css'),
+
+    new webpack.LoaderOptionsPlugin({
+      minimize: inProduction
+    })
+  ],
+  devServer: {
+    contentBase: path.resolve(__dirname, './dist')
+  }
 };
+
+
+if(inProduction) {
+  module.exports.plugins.push(
+    new webpack.optimize.UglifyJsPlugin()
+  );
+}
