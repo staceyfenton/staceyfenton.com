@@ -7,6 +7,7 @@ var browserify = require('browserify');
 var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var nunjucksRender = require('gulp-nunjucks-render');
+var data = require('gulp-data');
 var autoprefixer = require('gulp-autoprefixer');
 var autoprefixerOptions = {
   browsers: ['last 2 versions', 'ie 10']
@@ -33,9 +34,12 @@ gulp.task('dist', ['sass-dist', 'scripts', 'nunjucksRender'], function(cb) {
 /* ----- */ 
 
 gulp.task('nunjucksRender', function() {
-  return gulp.src('src/views/*.njk')
+  return gulp.src('src/views/pages/**/*.njk')
+    .pipe(data(function() {
+      return require('./src/views/data/work.json') // /staceyfenton.github.io/src/views/data/work.json
+    }))
     .pipe(nunjucksRender({
-      path: 'src/views',
+      path: 'src/views/',
       ext: '.html',
       inheritExtension: false
     }))

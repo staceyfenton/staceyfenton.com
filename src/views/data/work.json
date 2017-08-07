@@ -1,0 +1,40 @@
+{
+	"projects": [
+		{
+			"image": "",
+			"name": "Mondi Reporting Hub 2016",
+			"url": "/mondi-reporting-hub-2016/",
+			"featured": false
+		},
+		{
+			"image": "",
+			"name": "GSK Annual Report 2016",
+			"url": "/gsk-annual-report-2016/",
+			"featured": true
+		},
+		{
+			"image": "",
+			"name": "Coca-Cola HBC Integrated Annual Report 2016",
+			"url": "/coca-cola-hbc-integrated-annual-report-2016/",
+			"featured": true
+		},
+		{
+			"image": "",
+			"name": "GSK",
+			"url": "/gsk/",
+			"featured": true
+		},
+		{
+			"image": "",
+			"name": "Mace",
+			"url": "/mace/",
+			"featured": true
+		},
+		{
+			"image": "",
+			"name": "LPEQ",
+			"url": "/lpeq/",
+			"featured": false
+		}
+	]
+}
