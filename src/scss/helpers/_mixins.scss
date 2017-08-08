@@ -1,0 +1,14 @@
+@mixin wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: calc(100% - 40px);
+
+  @media (min-width: $tablet-landscape) {
+    width: calc(100% - 100px);
+  }
+}
+
+@mixin reading-wrapper {
+  margin: 0 auto;
+  max-width: 780px;
+}

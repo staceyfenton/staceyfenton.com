@@ -1,0 +1,31 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 200px, 0);
+  }
+
+  to {
+    opacity: .99;
+    transform: none;
+  }
+}
+
+.animate {
+  opacity: 0;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+body[data-hit='1'] {
+  .animate {
+    opacity: 1;
+  }
+
+  .fadeInUp {
+    animation-duration: 0s;
+  }
+}

@@ -1,0 +1,115 @@
+body {
+  color: rgba($black, .6);
+  font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px; 
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  color: $green;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin: 0 0 1.3em;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 30px 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-portrait) {
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 50px 0;
+  }
+
+  &:after {
+    background: $grey;
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 10px auto;
+    width: 40px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 1.458;
+
+  @media (min-width: $tablet-portrait) {
+    font-size: 20px;
+  }
+}
+
+// .page-title {
+//   font-size: 66px;
+//   line-height: 1.2;
+//   text-align: center;
+// }
+
+.button-wrapper {
+  margin: 20px 0;
+  text-align: center;
+
+  @media (min-width: $tablet-portrait) {
+    margin: 40px 0;
+  }
+}
+
+.button {
+  border: 2px solid rgba($black, .12);
+  color: $black;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .06em;
+  line-height: 24px;
+  margin: 2px 0 3px 0;
+  max-width: 100%;
+  padding: 14px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: rgba($black, .3);
+    text-decoration: none;
+  }
+}
+
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 28px;
+  stroke: currentColor;
+  stroke-width: 0;
+  width: 28px;
+}
