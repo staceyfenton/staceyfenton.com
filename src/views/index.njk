@@ -1,22 +1,32 @@
 {% extends "layouts/layout.njk" %}
 
 {% set pageTitle = "Stacey Fenton | London-based Front End Developer" %}
+{% set bodyClass = "home" %}
 
 {% block content %}
-  <h2>Hi, I'm Stacey</h2>
-  <p>I'm a front‑end developer originally from Sydney, Australia, now based in London, UK.</p>
-  <p><a href="/about-me" class="button">More about me</a></p>
+  <div class="hero">
+    <div class="hero__content">
+      <h2 class="hero__title">Hi, I'm Stacey</h2>
+      <p>I'm a front‑end developer originally from Sydney, Australia,<br>now based in London, UK.</p>
+      <p><a href="/about-me" class="button__link">More about me</a></p>
+    </div>
+  </div>
 
-  <ul class="project-list">
-    {% for project in projects %}
-      {% if project.featured %}
-        {% import './macros/project.njk' as projectMacro %}
-        {{projectMacro.project(project.name, project.url, project.image)}}
-      {% endif %}
-    {% endfor %}
-  </ul>
+  <div class="content-wrapper">
 
-  <div class="button">
-    <a href="/my-work" class="button__link">See more</a>
+    <h2>Recent work</h2>
+
+    <ul class="project-list">
+      {% for project in projects %}
+        {% if project.featured %}
+          {% import './macros/project.njk' as projectMacro %}
+          {{projectMacro.project(project.name, project.url, project.image)}}
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <div class="button">
+      <a href="/work" class="button__link">See more</a>
+    </div>
   </div>
 {% endblock %}

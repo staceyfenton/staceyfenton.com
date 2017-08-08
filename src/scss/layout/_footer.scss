@@ -1,0 +1,65 @@
+.site-footer {
+	background: rgba($black, 0.05);
+	margin: 30px 0 0;
+	
+	@media (min-width: $tablet-portrait) {
+		margin: 50px 0 0;
+	}
+
+	&__inner {
+		@include wrapper;
+		font-size: 14px;
+		padding: 25px 0;
+
+		@media (min-width: $tablet-portrait) {
+			display: table;
+			font-size: 16px;
+			padding: 50px 0;
+		}
+	}
+
+	&__social {
+		@media (min-width: $tablet-portrait) {
+			display: table-cell;
+			text-align: right;
+			vertical-align: middle;
+		}
+
+		&-link {
+			display: inline-block;
+			height: 28px;
+			margin: 0 4px 0 8px;
+			vertical-align: middle;
+
+			svg {
+				fill: #757575;
+				transition: fill .2s ease;
+				vertical-align: middle;
+			}
+
+			&:last-child {
+				margin: 0 0 0 3px;
+			}
+
+			&:hover {
+				svg {
+					fill: #39aadc;
+				}
+			}
+		}
+
+		.icon-linkedin-logo {
+			height: 23px;
+		}
+	}
+
+	&__copyright {
+		margin: 0 0 20px;
+
+		@media (min-width: $tablet-portrait) {
+			display: table-cell;
+			margin: 0;
+			vertical-align: bottom;
+		}
+	}
+}

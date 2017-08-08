@@ -24,29 +24,29 @@
   <meta name="twitter:creator" content="@staceyfenton" />
 
 </head>
-<body>
+<body class="{{bodyClass}}">
 	<header class="site-header">
 		<div class="site-header__inner">
-			<h1><a href="/">Stacey Fenton</a></h1>
-		</div>
-		<a href="" class="site-header__mobile-link"><span>Menu</span></a>
-		<nav class="site-header__nav">
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/about-me">About me</a></li>
-				<li><a href="/my-work">My work</a></li>
-				<li><a href="/get-in-touch">Get in touch</a></li>
-			</ul>
-		</nav>
+			<h1 class="site-header__title"><a class="site-header__link" href="/">Stacey Fenton</a></h1>
+  		<a href="" class="site-header__mobile-link"><span>Menu</span></a>
+  		<nav class="site-header__nav">
+  			<ul class="site-header__nav-list">
+  				<li class="site-header__nav-item"><a class="site-header__link" href="/">Home</a></li>
+  				<li class="site-header__nav-item"><a class="site-header__link" href="/about-me">About me</a></li>
+  				<li class="site-header__nav-item"><a class="site-header__link" href="/work">My work</a></li>
+  				<li class="site-header__nav-item"><a class="site-header__link" href="/get-in-touch">Get in touch</a></li>
+  			</ul>
+  		</nav>
+    </div>
 	</header>
 
-  <main class="content-wrapper">
+  <main>
     {% block content %} {% endblock %}
   </main>
 
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <p class="site-footer__copyright">&copy; 2017 Stacey Fenton. All Rights Reserved.</div>
+      <p class="site-footer__copyright">&copy; 2017 Stacey Fenton. All Rights Reserved.</p>
 
       <div class="site-footer__social">
         <a class="site-footer__social-link" href="https://twitter.com/staceyfenton" target="_blank">

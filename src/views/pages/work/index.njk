@@ -1,0 +1,16 @@
+{% extends "./layouts/layout.njk" %}
+
+{% set pageTitle = "My work - Stacey Fenton" %}
+
+{% block content %}
+	<div class="content-wrapper">
+	  <h2>My work</h2>
+
+	  <ul class="project-list">
+	    {% for project in projects %}
+	      {% import './macros/project.njk' as projectMacro %}
+	      {{projectMacro.project(project.name, project.url, project.image)}}
+	    {% endfor %}
+	  </ul>
+	</div>
+{% endblock %} 

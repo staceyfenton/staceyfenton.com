@@ -13,14 +13,15 @@ var autoprefixerOptions = {
   browsers: ['last 2 versions', 'ie 10']
 };
 
-gulp.task('default', ['browserSync', 'sass', 'scripts', 'images', 'nunjucksRender'], function () {
+gulp.task('default', ['browserSync', 'sass', 'scripts', 'images', 'fonts', 'nunjucksRender'], function () {
   gulp.watch('src/scss/**/*.scss', ['sass']); 
   gulp.watch('src/js/**/*.js', ['scripts']); 
   gulp.watch('src/views/**/*.njk', ['nunjucksRender']); 
   gulp.watch('src/img/**/*', ['images']); 
+  gulp.watch('src/fonts/**/*', ['fonts']); 
 });
 
-gulp.task('dist', ['sass-dist', 'scripts', 'images', 'nunjucksRender'], function(cb) {
+gulp.task('dist', ['sass-dist', 'scripts', 'images', 'fonts', 'nunjucksRender'], function(cb) {
   // minify js
   pump(
     [
@@ -77,6 +78,11 @@ gulp.task('scripts', function() {
 gulp.task('images', function() {
   return gulp.src('src/img/**/*')
     .pipe(gulp.dest('dist/assets/img'));
+});
+
+gulp.task('fonts', function() {
+  return gulp.src('src/fonts/**/*')
+    .pipe(gulp.dest('dist/assets/fonts'));
 });
 
 gulp.task('browserSync', function() {

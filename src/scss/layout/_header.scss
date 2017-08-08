@@ -1,0 +1,138 @@
+.site-header {
+	background: $white;
+	border-bottom: 1px solid rgba($black, 0);
+	position: relative;
+	transition: all .3s ease;
+	width: 100%;
+
+	&:after {
+		content: '';
+		display: table;
+		width: 100%;
+	}
+
+	.home & {
+		background: rgba($black, .06);
+	}
+
+	&__inner {
+		@include wrapper;
+	}
+
+	&__title {
+		float: left;
+		margin: 0;
+		padding: 20px 0;
+
+		@media (min-width: $tablet-portrait) {
+			padding: 35px 0;
+		}
+
+		a {
+			line-height: 30px;
+		}
+	}
+
+	&__link {
+		color: $black;
+		display: block;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 40px;
+    text-transform: uppercase;
+    transition: color .2s ease;
+
+    @media (min-width: $tablet-portrait) {
+			line-height: 30px;
+    }
+
+    &:hover {
+    	color: $green;
+    	text-decoration: none;
+    }
+	}
+
+	&__mobile-link {
+		float: right;
+		height: 65px;
+		position: relative;
+		width: 24px;
+
+		@media (min-width: $tablet-portrait) {
+			display: none;
+		}
+
+		span,
+		span:before,
+		span:after {
+	    background: $black;
+			content: '';
+	    display: block;
+	    height: 3px;
+	    left: 50%;
+	    margin-left: -12px;
+	    margin-top: -1px;
+	    position: absolute;
+	    text-indent: -999em;
+	    top: 50%;
+	    width: 24px;
+		}
+
+		span {
+			&:before {
+				margin-top: 7px;
+	    	top: 0;
+			}
+
+			&:after {
+				margin-top: -7px;
+				top: 0;
+			}
+		}
+	}
+
+	&__nav-list {
+		@include list-style-none;
+
+		@media (min-width: $tablet-portrait) {
+			float: right;
+		}
+
+		@media (max-width: $tablet-portrait - 1px) {
+			background: $white;
+			border-bottom: 1px solid $grey;
+			display: none;
+			left: 0;
+			padding: 0 20px 20px;
+			position: absolute;
+			top: 70px;
+			width: 100%;
+			z-index: 5;
+		}
+	}
+
+	&__nav-item {
+		@media (min-width: $tablet-portrait) {
+			display: inline-block;
+			margin: 0 10px;
+			padding: 35px 0;
+		}
+
+		&:first-child() {
+			margin-left: 0;
+		}
+
+		&:last-child() {
+			margin-right: 0;
+		}
+	}
+
+	&__nav {
+		clear: both;
+
+		@media (min-width: $tablet-portrait) {
+			clear: none;
+		}
+	}
+}
