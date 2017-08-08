@@ -3,6 +3,12 @@
 {% set pageTitle = "My work - Stacey Fenton" %}
 
 {% block content %}
-  <h1>My work</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non impedit atque accusamus quae mollitia iste, sunt recusandae ut deleniti! Facere laboriosam delectus pariatur dicta commodi harum voluptate eligendi odit, reprehenderit.</p>
+  <h2>My work</h2>
+
+  <ul class="project-list">
+    {% for project in projects %}
+      {% import './macros/project.njk' as projectMacro %}
+      {{projectMacro.project(project.name, project.url, project.image)}}
+    {% endfor %}
+  </ul>
 {% endblock %}

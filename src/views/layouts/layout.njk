@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <title>{{pageTitle}}</title>
   <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16" />
 
   <meta name="description" content="I'm a front-end developer with over 11 years experience, based in London, United Kingdom. I specialise in semantic and accessible HTML, CSS, and JavaScript."/>
   <meta name="robots" content="noodp"/>
@@ -25,12 +25,12 @@
 
 </head>
 <body>
-	<header>
-		<div class="header-inner">
+	<header class="site-header">
+		<div class="site-header__inner">
 			<h1><a href="/">Stacey Fenton</a></h1>
 		</div>
-		<a href="" class="header-mobile-link"><span>Menu</span></a>
-		<nav>
+		<a href="" class="site-header__mobile-link"><span>Menu</span></a>
+		<nav class="site-header__nav">
 			<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="/about-me">About me</a></li>
@@ -40,8 +40,30 @@
 		</nav>
 	</header>
 
-  <!-- You write code for this content block in another file -->
-  {% block content %} {% endblock %}
+  <main class="content-wrapper">
+    {% block content %} {% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__copyright">&copy; 2017 Stacey Fenton. All Rights Reserved.</div>
+
+      <div class="site-footer__social">
+        <a class="site-footer__social-link" href="https://twitter.com/staceyfenton" target="_blank">
+          <svg class="icon icon-twitter-logo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-sprite.svg#icon-twitter-logo"></use></svg>
+        </a>
+        <a class="site-footer__social-link" href="https://www.linkedin.com/in/staceyfenton" target="_blank">
+          <svg class="icon icon-linkedin-logo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-sprite.svg#icon-linkedin-logo"></use></svg>
+        </a>
+        <a class="site-footer__social-link" href="http://codepen.io/staceyfenton/" target="_blank">
+          <svg class="icon icon-codepen"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-sprite.svg#icon-codepen"></use></svg>
+        </a>
+        <a class="site-footer__social-link" href="https://github.com/staceyfenton" target="_blank">
+          <svg class="icon icon-github-logo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-sprite.svg#icon-github-logo"></use></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

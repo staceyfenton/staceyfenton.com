@@ -13,13 +13,14 @@ var autoprefixerOptions = {
   browsers: ['last 2 versions', 'ie 10']
 };
 
-gulp.task('default', ['browserSync', 'sass', 'scripts', 'nunjucksRender'], function () {
+gulp.task('default', ['browserSync', 'sass', 'scripts', 'images', 'nunjucksRender'], function () {
   gulp.watch('src/scss/**/*.scss', ['sass']); 
   gulp.watch('src/js/**/*.js', ['scripts']); 
   gulp.watch('src/views/**/*.njk', ['nunjucksRender']); 
+  gulp.watch('src/img/**/*', ['images']); 
 });
 
-gulp.task('dist', ['sass-dist', 'scripts', 'nunjucksRender'], function(cb) {
+gulp.task('dist', ['sass-dist', 'scripts', 'images', 'nunjucksRender'], function(cb) {
   // minify js
   pump(
     [
@@ -34,9 +35,9 @@ gulp.task('dist', ['sass-dist', 'scripts', 'nunjucksRender'], function(cb) {
 /* ----- */ 
 
 gulp.task('nunjucksRender', function() {
-  return gulp.src('src/views/pages/**/*.njk')
+  return gulp.src(['src/views/index.njk', 'src/views/pages/**/*.njk'])
     .pipe(data(function() {
-      return require('./src/views/data/work.json') // /staceyfenton.github.io/src/views/data/work.json
+      return require('./src/views/data/work.json')
     }))
     .pipe(nunjucksRender({
       path: 'src/views/',
@@ -71,6 +72,11 @@ gulp.task('scripts', function() {
   .bundle()
   .pipe(source('main.js'))
   .pipe(gulp.dest('./dist/assets/js'));
+});
+
+gulp.task('images', function() {
+  return gulp.src('src/img/**/*')
+    .pipe(gulp.dest('dist/assets/img'));
 });
 
 gulp.task('browserSync', function() {

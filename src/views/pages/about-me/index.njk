@@ -32,11 +32,12 @@
   </ul>
 
   
-
-  {% for project in projects %}
-    {% if loop.index < 4 %}
-      {% import './macros/project.njk' as projectMacro %}
-      {{projectMacro.project(project.name, project.url)}}
-    {% endif %}
-  {% endfor %}
+  <ul>
+    {% for project in projects %}
+      {% if loop.index < 4 %}
+        {% import './macros/project.njk' as projectMacro %}
+        {{projectMacro.project(project.name, project.url, project.image)}}
+      {% endif %}
+    {% endfor %}
+  </ul>
 {% endblock %}

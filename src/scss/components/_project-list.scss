@@ -1,0 +1,14 @@
+.project-list {
+  @include list-style-none;
+
+  @media (min-width: $mobile-large) {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+  }
+}
