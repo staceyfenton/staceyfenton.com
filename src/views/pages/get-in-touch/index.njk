@@ -4,9 +4,29 @@
 
 {% block content %}
 	<div class="content-wrapper">
-	  <h2>Get in touch</h2>
-	  <p>Have a quick question? You can tweet me at <a href="https://twitter.com/staceyfenton" target="_blank">@staceyfenton</a>. I’m also on <a href="https://www.linkedin.com/in/staceyfenton" target="_blank">LinkedIn</a> if you’d like to connect with me there. </p>
-	  <p>Alternatively, you can fill in the contact form below or send me an email directly at <a href="mailto:hello@staceyfenton.com">hello@staceyfenton.com</a>. </p>
-	  <p>If you are contacting me about a job opportunity please be aware that I require sponsorship to work in the UK. </p>
+		<div class="main-content">
+		  <h2>Get in touch</h2>
+		  <p>Have a quick question? You can tweet me at <a href="https://twitter.com/staceyfenton" target="_blank">@staceyfenton</a>. I’m also on <a href="https://www.linkedin.com/in/staceyfenton" target="_blank">LinkedIn</a> if you’d like to connect with me there. </p>
+		  <p>Alternatively, you can fill in the contact form below or send me an email directly at <a href="mailto:hello@staceyfenton.com">hello@staceyfenton.com</a>. </p>
+		  <p>If you are contacting me about a job opportunity please be aware that I require sponsorship to work in the UK. </p>
+
+		  <form class="contact-form" method="post">
+		  	<label for="name">Your name</label>
+	    	<input type="text" name="name" required pattern="[a-zA-Z0-9 ]+" class="contact-form__input">
+
+	    	<label for="email">Your email address</label>
+	    	<input type="email" name="_replyto" class="contact-form__input" required>
+
+	    	<input type="hidden" name="_subject" value="New contact form submission" />
+
+	    	<label for="message">Your message</label>
+	    	<textarea name="message" class="contact-form__input contact-form__textarea" required></textarea>
+	    	
+	    	<input type="text" name="_gotcha" style="display:none">
+	    	
+	    	<button type="submit" class="contact-form__submit">Send</button>
+			</form>
+		</div>
+
 	 </div>
 {% endblock %}
