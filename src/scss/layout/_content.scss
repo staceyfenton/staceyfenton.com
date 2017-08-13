@@ -41,6 +41,17 @@
 		.project-img {
 			margin-top: 0;
 		}
+
+		$anim-delay: 0;
+  	$max-elements: 4;
+
+    @for $i from 1 to $max-elements {
+      $anim-delay: $anim-delay + .5s;
+
+      div:nth-child(#{$i}) img {  
+      	animation-delay: $anim-delay;
+      }
+    }
 	}
 
 	.col-half {
