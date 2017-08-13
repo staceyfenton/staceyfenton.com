@@ -31,4 +31,40 @@
 		margin: 0 auto;
 	  max-width: 780px;
 	}
+
+	.row {
+		@media (min-width: $tablet-portrait) {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.project-img {
+			margin-top: 0;
+		}
+	}
+
+	.col-half {
+		@media (min-width: $tablet-portrait) {
+			width: 48%;
+		}
+	}
+
+	.col-third {
+		@media (min-width: $tablet-portrait) {
+			width: 30.66%;
+		}
+	}
+}
+
+.project-img {
+	border: 1px solid rgba($black, .08);
+	display: block;
+	height: auto;
+	margin: 2em auto;
+	max-width: 100%;
+	width: auto;
+
+	@media (min-width: $tablet-portrait) {
+		margin: 4em auto;
+	}
 }

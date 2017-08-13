@@ -29,3 +29,12 @@ body[data-hit='1'] {
     animation-duration: 0s;
   }
 }
+
+img {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+img[data-src] {
+  opacity: 0;
+}

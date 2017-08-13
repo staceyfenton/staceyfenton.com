@@ -1,133 +1,133 @@
 {
 	"projects": [
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/08/07205027/mondi-2017-thumb.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/08/07205027/mondi-2017-thumb.jpg",
 			"name": "Mondi Reporting Hub 2016",
 			"url": "/work/mondi-reporting-hub-2016/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/03/16233942/gsk-thumbnail.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/03/16233942/gsk-thumbnail.jpg",
 			"name": "GSK Annual Report 2016",
 			"url": "/work/gsk-annual-report-2016/",
 			"featured": true
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/03/19210819/cchbc-oar.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/03/19210819/cchbc-oar.jpg",
 			"name": "Coca-Cola HBC Integrated Annual Report 2016",
 			"url": "/work/coca-cola-hbc-integrated-annual-report-2016/",
 			"featured": true
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/03/16234213/gsk-thumbnail-2.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/03/16234213/gsk-thumbnail-2.jpg",
 			"name": "GSK",
 			"url": "/work/gsk/",
 			"featured": true
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/11/04172012/mace-thumb.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/11/04172012/mace-thumb.jpg",
 			"name": "Mace",
 			"url": "/work/mace/",
 			"featured": true
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211611/thumb-lpeq.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211611/thumb-lpeq.jpg",
 			"name": "LPEQ",
 			"url": "/work/lpeq/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211614/thumb-turnertownsend.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211614/thumb-turnertownsend.jpg",
 			"name": "Turner & Townsend",
 			"url": "/work/turner-townsend/",
 			"featured": true
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211604/thumb-syngenta2015.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211604/thumb-syngenta2015.jpg",
 			"name": "Syngenta Annual Report 2015",
 			"url": "/work/syngenta-annual-report-2015/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211612/thumb-cchbc.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211612/thumb-cchbc.jpg",
 			"name": "Coca-Cola Hellenic Bottling Company",
 			"url": "/work/coca-cola-hellenic-bottling-company/",
 			"featured": true
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211603/thumb-kbc.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211603/thumb-kbc.jpg",
 			"name": "KBC Bank",
 			"url": "/work/kbc/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211601/thumb-pwc.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211601/thumb-pwc.jpg",
 			"name": "PwC Middle Market Year In Review",
 			"url": "/work/pwc-middle-market-year-in-review/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211600/thumb-severntrent2015.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211600/thumb-severntrent2015.jpg",
 			"name": "Severn Trent Annual Review 2015",
 			"url": "/work/severn-trent-annual-review-2015/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211609/thumb-ry.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211609/thumb-ry.jpg",
 			"name": "Radley Yeldar",
 			"url": "/work/radley-yeldar/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211607/thumb-vodafone.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211607/thumb-vodafone.jpg",
 			"name": "Vodafone Group PLC Annual Report 2015",
 			"url": "/work/vodafone-group-plc-annual-report-2015/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211606/thumb-mondi.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211606/thumb-mondi.jpg",
 			"name": "Mondi Integrated Report and Financial Statements 2014",
 			"url": "/work/mondi-integrated-report-and-financial-statements-2014/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211559/thumb-bat.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211559/thumb-bat.jpg",
 			"name": "British American Tobacco Annual Review 2014",
 			"url": "/work/british-american-tobacco-annual-review-2014/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211557/thumb-thomascook.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211557/thumb-thomascook.jpg",
 			"name": "Thomas Cook Online Annual Report 2014",
 			"url": "/work/thomas-cook-online-annual-report-2014/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211555/thumb-kpmg.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211555/thumb-kpmg.jpg",
 			"name": "KPMG Consumer Insights Panel",
 			"url": "/work/kpmg-consumer-insights-panel/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211554/thumb-vc.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211554/thumb-vc.jpg",
 			"name": "VoucherCodes.co.uk",
 			"url": "/work/vouchercodes-co-uk/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211552/thumb-mw.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211552/thumb-mw.jpg",
 			"name": "Most Wanted",
 			"url": "/work/most-wanted/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/08/05211551/thumb-deals.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/08/05211551/thumb-deals.jpg",
 			"name": "Deals.com",
 			"url": "/work/deals-com/",
 			"featured": false
 		},
 		{
-			"image": "http://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/08/05211550/thumb-optus.jpg",
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/08/05211550/thumb-optus.jpg",
 			"name": "Optus",
 			"url": "/work/optus/",
 			"featured": false
