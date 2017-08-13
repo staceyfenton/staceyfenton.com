@@ -39,10 +39,17 @@ h6 {
 h3 {
   font-size: 18px;
   line-height: 1.458;
+  margin: 0;
 
   @media (min-width: $tablet-portrait) {
     font-size: 20px;
   }
+}
+
+ul,
+ol {
+  margin: .5em 0 1em;
+  padding: 0 0 0 1.2em;
 }
 
 // .page-title {
