@@ -13,4 +13,4 @@ deploy:
   on:
     branch: develop
   target_branch: master
-  github_token: $GITHUB_TOKEN
+  github_token: \\$GITHUB_TOKEN
