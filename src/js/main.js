@@ -1,3 +1,5 @@
+import 'whatwg-fetch';
+
 if(typeof window.stacey === 'undefined') {
   window.stacey = {};
 }

@@ -1,14 +1,16 @@
 .contact-form {
 	&__input {
+		appearance: none;
 		background: rgba($black, .06);
 		border: 0;
+		border-radius: 0;
+		box-sizing: border-box;
 		color: $black;
 		display: block;
 		font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		font-size: 16px; 
 		font-weight: 400;
-		height: 22px;
-		line-height: 22px;
+		height: 44px;
 		margin: 0 0 1em;
 		max-width: 100%;
 		padding: 11px 10px;
