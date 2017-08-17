@@ -23,7 +23,7 @@ gulp.task('default', ['browserSync', 'sass', 'scripts', 'images', 'fonts', 'nunj
   gulp.watch('src/fonts/**/*', ['fonts']); 
 });
 
-gulp.task('dist', ['sass-dist', 'scripts', 'images', 'fonts', 'nunjucksRender'], function(cb) {
+gulp.task('dist', ['sass-dist', 'scripts', 'images', 'fonts', 'nunjucksRender', 'readme'], function(cb) {
   // minify js
   pump(
     [
@@ -85,6 +85,11 @@ gulp.task('images', function() {
 gulp.task('fonts', function() {
   return gulp.src('src/fonts/**/*')
     .pipe(gulp.dest('dist/assets/fonts'));
+});
+
+gulp.task('readme', function() {
+  return gulp.src('README.md')
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('browserSync', function() {
