@@ -6,6 +6,7 @@ before_script:
 - npm install
 script:
 - gulp dist
+- gulp critical
 deploy:
   provider: pages
   skip_cleanup: true

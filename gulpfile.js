@@ -14,8 +14,9 @@ var autoprefixer = require('gulp-autoprefixer');
 var autoprefixerOptions = {
   browsers: ['last 2 versions', 'ie 10']
 };
+var critical = require('critical').stream;
 
-gulp.task('default', ['browserSync', 'sass', 'scripts', 'images', 'fonts', 'nunjucksRender'], function () {
+gulp.task('default', ['browserSync', 'nunjucksRender', 'sass', 'scripts', 'images', 'fonts'], function () {
   gulp.watch('src/scss/**/*.scss', ['sass']); 
   gulp.watch('src/js/**/*.js', ['scripts']); 
   gulp.watch('src/views/**/*.njk', ['nunjucksRender']); 
@@ -23,7 +24,7 @@ gulp.task('default', ['browserSync', 'sass', 'scripts', 'images', 'fonts', 'nunj
   gulp.watch('src/fonts/**/*', ['fonts']); 
 });
 
-gulp.task('dist', ['sass-dist', 'scripts', 'images', 'fonts', 'nunjucksRender', 'readme', 'manifest'], function(cb) {
+gulp.task('dist', ['nunjucksRender', 'sass-dist', 'scripts', 'images', 'fonts', 'readme', 'manifest'], function(cb) {
   // minify js
   pump(
     [
@@ -65,6 +66,20 @@ gulp.task('sass-dist', function() {
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(gulp.dest('dist/assets/css'))
+});
+
+gulp.task('critical', function () {
+  return gulp.src('dist/**/*.html')
+      .pipe(critical({
+        base: 'dist/', 
+        inline: true, 
+        minify: true, 
+        css: ['dist/assets/css/styles.css'],
+        width: 1300,
+        height: 900,
+        extract: true
+      }))
+      .pipe(gulp.dest('dist'));
 });
 
 gulp.task('scripts', function() {
