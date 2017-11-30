@@ -76,8 +76,7 @@ gulp.task('critical', function () {
         minify: true, 
         css: ['dist/assets/css/styles.css'],
         width: 1300,
-        height: 900,
-        extract: true
+        height: 900
       }))
       .pipe(gulp.dest('dist'));
 });
