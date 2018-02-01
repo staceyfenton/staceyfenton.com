@@ -1,7 +1,12 @@
 {% macro project(name, url, image, webp) %}
   <li class="project-list__item">
   	<a href="{{ url }}" class="project-list__link">
-      <noscript data-class="project-list__img" data-src="{{ image }}" data-webp="{{ webp }}" data-alt="{{ name }}""><img src="{{ image }}" alt="{{ name }}" class="project-list__img"></noscript>
+      <picture class="js-lazy-load">
+        {% if webp %}<source data-srcset="{{ webp }}" type="image/webp">{% endif %}
+        <source data-srcset="{{ image }}" type="image/jpeg"> 
+        <img data-src="{{ image }}" alt="{{ name }}" class="project-list__img">
+      </picture>
+      <noscript><img src="{{ image }}" alt="{{ name }}" class="project-list__img"></noscript>
       <span class="project-list__name">{{ name }}</span>
     </a>
   </li>

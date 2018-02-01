@@ -10,15 +10,20 @@ window.stacey = {
 		emAdd: null,
 		animatedElements: null,
 		mobileNavLink: null,
-		primaryNav: null
+		primaryNav: null,
+		observer: null
 	},
 
 	init() {
 		// image lazy load
-		window.stacey.Helpers.lazyLoadImages();
+		if (!('IntersectionObserver' in window)) {
+			window.stacey.Helpers.loadAllImages();
+		} else {
+			window.stacey.Helpers.lazyLoadImages();
+		}
 
 		// contact form
-		window.stacey.Helpers.initForm()
+		window.stacey.Helpers.initForm();
 
 		// animations
 		window.stacey.vars.animatedElements = [...document.querySelectorAll('.project-list__item, .project-img')];
@@ -97,28 +102,49 @@ window.stacey = {
 	},
 
 	Helpers: {
-		lazyLoadImages() {
-			var noscripts = [...document.querySelectorAll('noscript')];
-			noscripts.forEach(noscript => {
-				var pic = document.createElement('picture');
-				var webp = noscript.getAttribute('data-webp');
-				var jpg = noscript.getAttribute('data-src');
-				if(webp !== "") {
-					pic.innerHTML = `<source srcset="${webp}" type="image/webp">`;
-				}
-				pic.innerHTML += `<source srcset="${jpg}" type="image/jpeg">`;
-				pic.innerHTML += `<img src="${jpg}" alt="${noscript.getAttribute('data-alt')}" class="${noscript.getAttribute('data-class')}">`;
-        noscript.parentNode.insertBefore(pic, noscript);
-				// var newImg = new Image();
-				// newImg.setAttribute('data-src', '');
-				// newImg.setAttribute('alt', noscript.getAttribute('data-alt') || '');
-				// newImg.setAttribute('class', noscript.getAttribute('data-class'));
-				// noscript.parentNode.insertBefore(newImg, noscript);
-				// newImg.onload = function() {
-				// 	newImg.removeAttribute('data-src');
-				// };
-				// newImg.src = noscript.getAttribute('data-src');
+		loadAllImages() {
+			let images = [...document.querySelectorAll('.js-lazy-load')];
+			images.forEach(img => {
+				window.stacey.Helpers.loadImage(img);
 			});
+		},
+
+		lazyLoadImages() {
+			// Get all of the images that are marked up to lazy load
+			let images = [...document.querySelectorAll('.js-lazy-load')];
+			let config = {
+				// If the image gets within 50px in the Y axis, start the download.
+				rootMargin: '50px 0px',
+				threshold: 0.01
+			};
+
+			// The observer for the images on the page
+			window.stacey.vars.observer = new IntersectionObserver(window.stacey.Helpers.onIntersection, config);
+			images.forEach(image => {
+				window.stacey.vars.observer.observe(image);
+			});
+		},
+
+		onIntersection(entries) {
+			// Loop through the entries
+			entries.forEach(entry => {
+				// Are we in viewport?
+				if (entry.intersectionRatio > 0) {
+		
+					// Stop watching and load the image
+					window.stacey.vars.observer.unobserve(entry.target);
+					window.stacey.Helpers.loadImage(entry.target);
+				}
+			});
+		},
+
+		loadImage(img) {
+			var sources = img.querySelectorAll('source');
+			var img = img.querySelector('img');
+			sources.forEach(src => {
+				src.setAttribute('srcset', src.getAttribute('data-srcset'));
+			});
+			img.src = img.getAttribute('data-src');
 		},
 
 		initForm() {

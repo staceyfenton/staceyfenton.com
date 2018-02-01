@@ -12,7 +12,7 @@
 	  <ul class="project-list">
 	    {% for project in projects %}
 	      {% import './macros/project.njk' as projectMacro %}
-	      {{projectMacro.project(project.name, project.url, project.image)}}
+	      {{projectMacro.project(project.name, project.url, project.image, project.webp)}}
 	    {% endfor %}
 	  </ul>
 	</div>
