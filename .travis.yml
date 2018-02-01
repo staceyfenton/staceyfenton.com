@@ -9,6 +9,9 @@ before_script:
 script:
 - gulp dist
 - gulp critical
+cache:
+  directories:
+    - "node_modules"
 deploy:
   provider: pages
   skip_cleanup: true
