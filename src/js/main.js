@@ -100,15 +100,24 @@ window.stacey = {
 		lazyLoadImages() {
 			var noscripts = [...document.querySelectorAll('noscript')];
 			noscripts.forEach(noscript => {
-				var newImg = new Image();
-				newImg.setAttribute('data-src', '');
-				newImg.setAttribute('alt', noscript.getAttribute('data-alt') || '');
-				newImg.setAttribute('class', noscript.getAttribute('data-class'));
-				noscript.parentNode.insertBefore(newImg, noscript);
-				newImg.onload = function() {
-					newImg.removeAttribute('data-src');
-				};
-				newImg.src = noscript.getAttribute('data-src');
+				var pic = document.createElement('picture');
+				var webp = noscript.getAttribute('data-webp');
+				var jpg = noscript.getAttribute('data-src');
+				if(webp !== "") {
+					pic.innerHTML = `<source srcset="${webp}" type="image/webp">`;
+				}
+				pic.innerHTML += `<source srcset="${jpg}" type="image/jpeg">`;
+				pic.innerHTML += `<img src="${jpg}" alt="${noscript.getAttribute('data-alt')}" class="${noscript.getAttribute('data-class')}">`;
+        noscript.parentNode.insertBefore(pic, noscript);
+				// var newImg = new Image();
+				// newImg.setAttribute('data-src', '');
+				// newImg.setAttribute('alt', noscript.getAttribute('data-alt') || '');
+				// newImg.setAttribute('class', noscript.getAttribute('data-class'));
+				// noscript.parentNode.insertBefore(newImg, noscript);
+				// newImg.onload = function() {
+				// 	newImg.removeAttribute('data-src');
+				// };
+				// newImg.src = noscript.getAttribute('data-src');
 			});
 		},
 

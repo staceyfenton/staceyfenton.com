@@ -22,7 +22,7 @@
       {% for project in projects %}
         {% if project.featured %}
           {% import './macros/project.njk' as projectMacro %}
-          {{projectMacro.project(project.name, project.url, project.image)}}
+          {{projectMacro.project(project.name, project.url, project.image, project.webp)}}
         {% endif %}
       {% endfor %}
     </ul>

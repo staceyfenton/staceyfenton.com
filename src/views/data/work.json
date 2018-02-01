@@ -8,24 +8,28 @@
 		},
 		{
 			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/03/16233942/gsk-thumbnail.jpg",
+			"webp": "//d1nd6ebc4fb67p.cloudfront.net/img/gsk-thumbnail.webp",
 			"name": "GSK Annual Report 2016",
 			"url": "/work/gsk-annual-report-2016/",
 			"featured": true
 		},
 		{
 			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/03/19210819/cchbc-oar.jpg",
+			"webp": "//d1nd6ebc4fb67p.cloudfront.net/img/cchbc-oar.webp",
 			"name": "Coca-Cola HBC Integrated Annual Report 2016",
 			"url": "/work/coca-cola-hbc-integrated-annual-report-2016/",
 			"featured": true
 		},
 		{
 			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/03/16234213/gsk-thumbnail-2.jpg",
+			"webp": "//d1nd6ebc4fb67p.cloudfront.net/img/gsk-thumbnail-2.webp",
 			"name": "GSK",
 			"url": "/work/gsk/",
 			"featured": true
 		},
 		{
 			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/11/04172012/mace-thumb.jpg",
+			"webp": "//d1nd6ebc4fb67p.cloudfront.net/img/mace-thumb.webp",
 			"name": "Mace",
 			"url": "/work/mace/",
 			"featured": true
@@ -38,6 +42,7 @@
 		},
 		{
 			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211614/thumb-turnertownsend.jpg",
+			"webp": "//d1nd6ebc4fb67p.cloudfront.net/img/thumb-turnertownsend.webp",
 			"name": "Turner & Townsend",
 			"url": "/work/turner-townsend/",
 			"featured": true
@@ -50,6 +55,7 @@
 		},
 		{
 			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211612/thumb-cchbc.jpg",
+			"webp": "//d1nd6ebc4fb67p.cloudfront.net/img/thumb-cchbc.webp",
 			"name": "Coca-Cola Hellenic Bottling Company",
 			"url": "/work/coca-cola-hellenic-bottling-company/",
 			"featured": true
