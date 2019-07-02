@@ -1,4 +1,5 @@
 {% extends "./layouts/layout.njk" %}
+{% import './macros/image.njk' as imageMacro %}
 
 {% set pageTitle = "LPEQ - Stacey Fenton" %}
 
@@ -21,24 +22,24 @@
   </article>
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211544/lpeq-home.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211544/lpeq-home.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211544/lpeq-home.jpg", "")}}
   </p>
 
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211530/lpeq-about.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211530/lpeq-about.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211530/lpeq-about.jpg", "")}}
   </p>
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211523/lpeq-who-we-are.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211523/lpeq-who-we-are.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211523/lpeq-who-we-are.jpg", "")}}
   </p>
 
   <div class="row">
     <div class="col-half">
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211537/lpeq-mob-nav.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211537/lpeq-mob-nav.png" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211537/lpeq-mob-nav.png", "")}}
     </div>
     <div class="col-half">
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211534/lpeq-mob-news.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211534/lpeq-mob-news.png" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211534/lpeq-mob-news.png", "")}}
     </div>
   </div>
 </div>

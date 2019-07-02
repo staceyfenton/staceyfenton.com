@@ -1,0 +1,7 @@
+{% macro image(image, alt) %}
+  <picture class="js-lazy-load">
+    <source data-srcset="{{ image }}" type="image/jpeg"> 
+    <img data-src="{{ image }}" alt="{{ alt }}" class="project-list__img">
+  </picture>
+  <noscript><img src="{{ image }}" class="project-img" alt="{{ alt }}" /></noscript>
+{% endmacro %}

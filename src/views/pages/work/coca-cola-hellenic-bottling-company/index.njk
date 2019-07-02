@@ -1,4 +1,5 @@
 {% extends "./layouts/layout.njk" %}
+{% import './macros/image.njk' as imageMacro %}
 
 {% set pageTitle = "Coca-Cola Hellenic Bottling Company - Stacey Fenton" %}
 
@@ -22,28 +23,28 @@
   </article>
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211333/cchbc-home.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211333/cchbc-home.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211333/cchbc-home.jpg", "")}}
   </p>
 
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211318/cchbc-vision.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211318/cchbc-vision.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211318/cchbc-vision.jpg", "")}}
   </p>
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211342/cchbc-content.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211342/cchbc-content.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211342/cchbc-content.jpg", "")}}
   </p>
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211326/cchbc-stories.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211326/cchbc-stories.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211326/cchbc-stories.jpg", "")}}
   </p>
 
   <div class="row">
     <div class="col-half">
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211310/cchbc-mob-home.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211310/cchbc-mob-home.png" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211310/cchbc-mob-home.png", "")}}
     </div>
     <div class="col-half">
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211306/cchbc-mob-nav.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211306/cchbc-mob-nav.png" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211306/cchbc-mob-nav.png", "")}}
     </div>
   </div>
 </div>

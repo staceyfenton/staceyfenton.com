@@ -1,4 +1,5 @@
 {% extends "./layouts/layout.njk" %}
+{% import './macros/image.njk' as imageMacro %}
 
 {% set pageTitle = "Severn Trent Annual Review 2015 - Stacey Fenton" %}
 
@@ -21,23 +22,23 @@
   </article>
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211247/st1.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211247/st1.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211247/st1.jpg", "")}}
   </p>
 
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211241/st2.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211241/st2.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211241/st2.jpg", "")}}
   </p>
 
   <div class="row">
     <div class="col-third">
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211234/st-mob1.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211234/st-mob1.png" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211234/st-mob1.png", "")}}
     </div>
     <div class="col-third">
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211231/st-mob2.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211231/st-mob2.png" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211231/st-mob2.png", "")}}
     </div>
     <div class="col-third">
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211222/st-mob3.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211222/st-mob3.png" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211222/st-mob3.png", "")}}
     </div>
   </div>
 </div>

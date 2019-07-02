@@ -1,4 +1,5 @@
 {% extends "./layouts/layout.njk" %}
+{% import './macros/image.njk' as imageMacro %}
 
 {% set pageTitle = "Mondi Reporting Hub 2016 - Stacey Fenton" %}
 
@@ -20,20 +21,20 @@
     </article>
 
     <p>
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/08/07204035/mondi-ar2017-1.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/08/07204035/mondi-ar2017-1.jpg" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/08/07204035/mondi-ar2017-1.jpg", "")}}
     </p>
 
 
     <p>
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/08/07204039/mondi-ar2017-2.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/08/07204039/mondi-ar2017-2.jpg" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/08/07204039/mondi-ar2017-2.jpg", "")}}
     </p>
 
     <div class="row">
       <div class="col-half">
-        <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/05/17223625/IMG_2411.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/05/17223625/IMG_2411.png" class="project-img" alt="" /></noscript>
+        {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/05/17223625/IMG_2411.png", "")}}
       </div>
       <div class="col-half">
-        <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/05/17223623/IMG_2412.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/05/17223623/IMG_2412.png" class="project-img" alt="" /></noscript>
+        {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/05/17223623/IMG_2412.png", "")}}
       </div>
     </div>
   </div>

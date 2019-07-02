@@ -1,6 +1,12 @@
 {
 	"projects": [
 		{
+			"image": "//d1nd6ebc4fb67p.cloudfront.net/img/2019/ctm-thumb.jpg",
+			"name": "Compare the Market",
+			"url": "/work/comparethemarket/",
+			"featured": true
+		},
+		{
 			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/08/07205027/mondi-2017-thumb.jpg",
 			"name": "Mondi Reporting Hub 2016",
 			"url": "/work/mondi-reporting-hub-2016/",
@@ -11,7 +17,7 @@
 			"webp": "//d1nd6ebc4fb67p.cloudfront.net/img/gsk-thumbnail.webp",
 			"name": "GSK Annual Report 2016",
 			"url": "/work/gsk-annual-report-2016/",
-			"featured": true
+			"featured": false
 		},
 		{
 			"image": "//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2017/03/19210819/cchbc-oar.jpg",

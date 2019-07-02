@@ -1,4 +1,5 @@
 {% extends "./layouts/layout.njk" %}
+{% import './macros/image.njk' as imageMacro %}
 
 {% set pageTitle = "KPMG Consumer Insights Panel - Stacey Fenton" %}
 
@@ -20,15 +21,15 @@
   </article>
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05210919/kpmg-desktop.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05210919/kpmg-desktop.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05210919/kpmg-desktop.jpg", "")}}
   </p>
 
   <div class="row">
     <div class="col-half">
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05210914/kpmg-mob1.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05210914/kpmg-mob1.png" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05210914/kpmg-mob1.png", "")}}
     </div>
     <div class="col-half">
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05210910/kpmg-mob2.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05210910/kpmg-mob2.png" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05210910/kpmg-mob2.png", "")}}
     </div>
   </div>
 </div>

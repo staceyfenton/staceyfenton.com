@@ -1,4 +1,5 @@
 {% extends "./layouts/layout.njk" %}
+{% import './macros/image.njk' as imageMacro %}
 
 {% set pageTitle = "KBC Bank - Stacey Fenton" %}
 
@@ -20,20 +21,20 @@
   </article>
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211516/kbc-home.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211516/kbc-home.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211516/kbc-home.jpg", "")}}
   </p>
 
 
   <p>
-    <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211509/kbc-who-we-are.jpg"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211509/kbc-who-we-are.jpg" class="project-img" alt="" /></noscript>
+    {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211509/kbc-who-we-are.jpg", "")}}
   </p>
 
   <div class="row">
     <div class="col-half">
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211502/kbc-careers1.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211502/kbc-careers1.png" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211502/kbc-careers1.png", "")}}
     </div>
     <div class="col-half">
-      <noscript data-class="project-img" data-src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211455/kbc-careers2.png"><img src="//d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211455/kbc-careers2.png" class="project-img" alt="" /></noscript>
+      {{imageMacro.image("https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211455/kbc-careers2.png", "")}}
     </div>
   </div>
 </div>
