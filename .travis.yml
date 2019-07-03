@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "8.9.4"
+- 8.9.4
 before_script:
 - npm install -g gulp
 - npm install
@@ -9,7 +9,7 @@ script:
 - gulp critical
 cache:
   directories:
-    - "node_modules"
+  - node_modules
 deploy:
   provider: pages
   skip_cleanup: true
@@ -18,5 +18,5 @@ deploy:
     branch: develop
   target_branch: master
   fqdn: staceyfenton.com
-  github_token:
-    secure: LnhYxUjrfAQjA8qmdbVn82/lykjpXSL+y9+m5fx/wMEKeAwlvDIWAhbPrMxVCZ1HlgUXE/oAGtP3WUP2sqYK0MJkrCYBH4cWkJn1ql7F4ekXImtFxWcelxnZ1WK1/mxWfSNUhX/Vhy9YND+WiEY7uNwGcxx5VQCIaPOjUoniZN6YqJIVXJ2juFHw5Lc+ovFqVARRk1K+a2oyWcHIl/tQIpLY8x71lNFhqYeSy0VsFNyOXBVDVkW9lxVY0xHniyD+HUuwxChSeUkn/xGFni4JkWi7QhiURdEs8U5X926Fmx7/0WekPDBrkKXH3bXxeuBq7p39kAnMsIFnkENiV/VrRh81yYkuMhuiCiqvkpUno+CkDL6vczNas8EYVLLEb0jy1J9v6plxWYPpk2OW4JfsvN3wQ+I9GbfkHeijC3vzXHzgM6rrEZLXDO0Hi7CDmzt4cAVAKOTm29JxGaxtUdNnUggehX4G3mrVzRn4bnTp8E6gviS/DgU2o4pqLDmbB0onEP3A4KQgLt5zHE01CId9oob6fjrqVGZeERDrT/03iOOBEKCSvjOIrTJ7GO4S9sccogasRg8qjl6tOoXkXEXgBVrsj+Q0suUF4YWdxlv2kLLog5aKeQ7nd/8ddOxzcKT3amwCVSHP+NEDLxWkRFuchDkghl9ZW/0csdpeB9kRltk=
+github_token:
+  secure: XGxmJuJEQW86ttOTdVwsv0y00Txmizzzg2L7MaC2WSLWvzb41KRjLMQ6W7sD2PIDqMI0HhZGELEpp+SxXPISf4+r92Ri+AJrvG7bVNMKdkQ5KNlP9Q4kVxY5WsUonocZS70a5W2YYze3dzFzlyMOIl3LRWo/kiL+j1i9FihIy1RGnMs5XBS8GJM1UD5wCjc/4aWBZi90ch2VG87/IryDoiF0PPkyHpu2VZRyJrPJeXObgDxeuXu6ZYq7RGDS6PtyJqP5vkyHW5PRjM3BEoOef4CRTNM0kXVdKGWd5W0WGP5cKA+shMxp+pw/0/NJpeO7X3ZOms77CfD4wIAK6r3yiD0HwPSpgvH2vvBTNwCswbva4HMBWV58gOc5iLwLGlBBZrmo4sz0nSyROypqh37+QzVHRr7ev5z2zBBOFaXwkF+5YZJkzil9litzls6m21qdH/KXAkp0lfeK4pEy31pUDKsdz96q1rdRYf+/DThWmtU9Tgv6JHyUP7Y+Uzc2BiPswq8UuhIVJdXIdkt2hlA93CTBP1kj+tIaTDblc4ZKqaEsKPovDn7ZZEDk+x0yXNZ0KFdhec460GknZzINUlfrfJkqMy3s6yZUBuS4Ka5DMgLHiSzpBL+uQZ3Hmnc+KiC3U8YjkBLwf75SUZQsZd3h32EAt+aCH49N9mEgTZu1Im0=
