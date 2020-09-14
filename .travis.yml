@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- 12
+before_script:
+- npm install
+script:
+- npm run export
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: out
+  on:
+    branch: v4
+  target_branch: master
+  fqdn: staceyfenton.com
+  github_token:
+    secure: hrTyEZeBf0EeSloe1YBdIZ9ezdlyULWCWdco0cK/xetLL8C1Eunt5eBQSbwhG2MxpFX068s2VNAoxDgmUhzVMpE8/yOOYEL2O/lPSHomM6PrTwcd86TT9MoHySjF8vLbrBZnouuYmpJv8LsV8Sa7/xC7qCkW+8RtQUNblJ4hsoEyiZWI2vAgtN516o+g0xZTuxdVO5G2Mzbz2NAddmFVgccvdjjd4j5fxeLawShvfoWm7SiyMOSwr2PNc4F9eMZ0Dz2EuJ9nIktkuB64tIFLwxe9ubk9/R0XmUTeH4rE1UMoPOri5i65ajkrv8zoiUWacGHu938xUNG9AOmmA2Hb7D4ntZIQWcmMURo26W388RVzYCvDbqDYD1InZ0GUsC22TRNtMSash5vzTBRaX+8XBZNgooSY7RVG0NJljF/40JgAdv3fg011wtdVlMu9hJ4l2/LgIMdad+O5fn8MR3clbvucH5tCLld2l4F+76I9JU7ny3icl6qkXJVF95UB2046AR/hqS6p6blIXTWXoSeIR5wvLS4o5f5tvgjTkVOXODle/qf4em+63QoXIz8SSiVqJonuwrszg3B5U36pjM8jUIfwnKH9gIUfO1V8uD2DkxKMvO7rI6Q8U8hKwZsZ9GfZAPvuL4tp2203abo5+Z8WKYoccnfvrd08znWgo4hCbuE=
