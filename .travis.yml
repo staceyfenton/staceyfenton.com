@@ -9,7 +9,6 @@ cache:
   directories:
   - node_modules
 deploy:
-  matrix:
   - provider: pages
     skip_cleanup: true
     local_dir: out
@@ -20,12 +19,12 @@ deploy:
     github_token:
       secure: U5+33YTRQWY0nC6updjBkxAOqEQ3pOAWoiHsNezPVfaIlUmta/mAjcCfvjg/0J+rh9AaspA1fbq1gTOMWnbPx7Lmwa7nvtop6Y2xDB0jhCJanBk+IxAlLZQJQgSMJ/vc9Te9g9f8BcfvbfUdkfzo7Ji7kURR3T0EcXoz6VQXrj5X6pg+JTDGILKuECE0WBBoQS1hFGY2E0NDn2peWsxUdfvSWj3+RtmGINYiRlsG/5s8qlky9tmsVQ9ZQ53b1X38SUSzCa8XU9aVMMELPiCqQy95yfTmg87pUzH4RiB9Q5BOqr2Oi+XUuGDCcqxvWwaMYGVqqI9MEo+z13zN96EaO+J9gTG9GLfBTQ9g5/5laFu2MB+Et7TDE8I510oZgvyUaL/DVyaT89HpHkvcDjQz3pu8m66Cr9u7bd6yM/HL0i/zsnMsYR++6uih67uxYWPYqdmz3tavOBRnfV5yaWqfaPlBlzW/NNvsxXtxprfrvwifJTMIneUL9BWosQMmGaCx7CYzHkCfPSyEoEnO0KpTzUPPuy144t0bou88xw4RPA9T18m9mpS4PBfom0n+5PBjMDQn9W3z6xYNG25SG1Q5YC9Q4P0S3qGHZXJlzrYjSV0lFXl/Q8JQZ1Am0PX2hpkHI2tZLCT7l1qYsA4tt62ThCrBuPMWsg4Tas7bZSO5Q1Y=
   - provider: s3
-    bucket: staceyfenton
     skip_cleanup: true
-    acl: public_read
     local_dir: out/_next
     on:
       branch: v4
+    bucket: staceyfenton
+    acl: public_read
     upload-dir: _next
     secret_access_key:
       secure: DnXdJ0Murm74iOtl993iBuEt9Ub6S77RhN5MoyVNIyf89V0oYSCaE8mxr5GuU8UDaXXuuF0twiIt76G35AlRl4pmfC8DY3OHR0Btt8WO0W8avG/Aa1/HzWxPft+9K1OD+jXw+RNlh8pXNiFMjJY/UDL0Nzm8afVR0jVbfevBdsa54spT4ky9mQIrI6NCZrSJL4y486p/ewAi4AMXMvPVptfDNtDFJZRjrqKQw5mM4uiWUdKQTR0WTNdVSLy8vBkMZ1dFfa9OG/MhcuOcFGGM7CApNThzxV8d9UTp+J7yRHZc2XOP1dYdB+vsgb/RWo8IZYax+yQRw4IsgOkhA48L57GLO0a7pOINGSohxC8VQPQKv6CInj/85KgRAbfZ+Y5/m0UpoEhdWDFeMkvhuZr3rW20WUQZtENYNDB+wEj9/nJmOEYnbVCeBPEuasBvw7IRTaOM77fQFjpkBYlCBfTkgbJtx37jxMYawYeYoR2y3LhQxwoZlRu8P+zlOIrigFz8UFLUGPScFeUkiuSUPTUuPbbDGsEXTsFWZVh3OneJxGUrNPt5d/b/7oXDKGwmAR2yhusq+QwXMI0tjkaGphuTxYPHlX2j/WdpYpmpOOCQ/cJVBbGpDFtgv9bKQau1V8LF6mTcnG01VSK9oZzh9VcFLN8DNNvGYAhzHSDQRx1OzyQ=
