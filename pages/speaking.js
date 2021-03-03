@@ -25,7 +25,7 @@ export default function Speaking() {
               <li>
                 <p>
                   <a href="https://www.devopsonline.co.uk/industryforum/speakers/stacey-fenton/">DevOps Industry Forum</a><br />
-                  25th November 2020<br />
+                  June 2021<br />
                   London, UK
                 </p>
               </li>
