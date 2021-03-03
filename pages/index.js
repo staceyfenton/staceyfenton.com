@@ -30,7 +30,7 @@ export default function Home({ allWorkData }) {
           <p>
             I'm a technical lead and front‑end developer originally from Sydney, Australia, currently based in London, UK.
           </p>
-          <p><Link href="/about-me"><a className="button">More about me</a></Link></p>
+          <p><Link href="/about-me" prefetch={false}><a className="button">More about me</a></Link></p>
         </div>
       </section>
 

@@ -19,7 +19,7 @@ export default function Custom404() {
           <div className="body-content align-centre">
             <h2>404 - Page Not Found</h2>
             <p>Sorry, the page you are looking for does not exist.</p>
-            <p><Link href="/"><a className="button">Go to homepage</a></Link></p>
+            <p><Link href="/" prefetch={false}><a className="button">Go to homepage</a></Link></p>
           </div>
         </div>
       </Layout>
