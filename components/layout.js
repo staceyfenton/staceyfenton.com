@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Preload from './preload';
 
 export const siteTitle = 'Stacey Fenton - Front-End / UI Engineer and Technical Lead';
 export const siteDescription = 'I\'m a Technical Lead and Front-End Developer based in London, United Kingdom, with over 15 years commercial experience.';
@@ -12,11 +13,8 @@ function Layout({ headerClass, children }) {
         <meta name="language" content="en" />
         <meta name="keywords" content="front-end web developer, technical lead, UI engineer, HTML, CSS, JavaScript, London, Sydney"/>
         <meta name="description" content={siteDescription} />
-        <link rel="preload" href="/fonts/raleway-regular.woff" as="font" type="font/woff" crossOrigin="true" />
-        <link rel="preload" href="/fonts/raleway-medium.woff" as="font" type="font/woff" crossOrigin="true" />
-        <link rel="preload" href="/fonts/raleway-bold.woff" as="font" type="font/woff" crossOrigin="true" />
-        <link rel="preload" href="/fonts/raleway-semibold.woff" as="font" type="font/woff" crossOrigin="true" />
       </Head>
+      <Preload />
       <header className={headerClass}>
         <div className="container flex flex-wrap">
           <h1>
