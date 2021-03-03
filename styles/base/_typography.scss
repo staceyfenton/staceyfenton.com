@@ -22,6 +22,7 @@ a {
   font-weight: bold;
   text-decoration: none;
   transition: all .2s ease;
+  transition-property: color, border, text-decoration;
 
   &:hover {
     text-decoration: underline;
