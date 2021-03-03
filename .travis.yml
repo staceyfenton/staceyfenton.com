@@ -24,7 +24,6 @@ deploy:
     on:
       branch: v4
     bucket: staceyfenton
-    acl: public_read
     upload-dir: _next
     secret_access_key:
       secure: DnXdJ0Murm74iOtl993iBuEt9Ub6S77RhN5MoyVNIyf89V0oYSCaE8mxr5GuU8UDaXXuuF0twiIt76G35AlRl4pmfC8DY3OHR0Btt8WO0W8avG/Aa1/HzWxPft+9K1OD+jXw+RNlh8pXNiFMjJY/UDL0Nzm8afVR0jVbfevBdsa54spT4ky9mQIrI6NCZrSJL4y486p/ewAi4AMXMvPVptfDNtDFJZRjrqKQw5mM4uiWUdKQTR0WTNdVSLy8vBkMZ1dFfa9OG/MhcuOcFGGM7CApNThzxV8d9UTp+J7yRHZc2XOP1dYdB+vsgb/RWo8IZYax+yQRw4IsgOkhA48L57GLO0a7pOINGSohxC8VQPQKv6CInj/85KgRAbfZ+Y5/m0UpoEhdWDFeMkvhuZr3rW20WUQZtENYNDB+wEj9/nJmOEYnbVCeBPEuasBvw7IRTaOM77fQFjpkBYlCBfTkgbJtx37jxMYawYeYoR2y3LhQxwoZlRu8P+zlOIrigFz8UFLUGPScFeUkiuSUPTUuPbbDGsEXTsFWZVh3OneJxGUrNPt5d/b/7oXDKGwmAR2yhusq+QwXMI0tjkaGphuTxYPHlX2j/WdpYpmpOOCQ/cJVBbGpDFtgv9bKQau1V8LF6mTcnG01VSK9oZzh9VcFLN8DNNvGYAhzHSDQRx1OzyQ=
