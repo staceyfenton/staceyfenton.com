@@ -18,7 +18,7 @@ function Layout({ headerClass, children }) {
       <header className={headerClass}>
         <div className="container flex flex-wrap">
           <h1>
-            <Link href="/"><a>Stacey Fenton</a></Link>
+            <Link href="/" prefetch={false}><a>Stacey Fenton</a></Link>
           </h1>
           <nav>
             <ul className="list-reset flex">

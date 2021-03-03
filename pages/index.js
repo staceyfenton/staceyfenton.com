@@ -41,7 +41,7 @@ export default function Home({ allWorkData }) {
             <li key={id}>
               <Link href="/work/[id]" as={`/work/${id}`} prefetch={false}>
                 <a className="project-list__link">
-                  <img src={thumbnail} alt={title} className="project-list__img" width="318" height="228" />
+                  <img src={thumbnail} alt={title} className="project-list__img" width="318" height="228" loading="lazy" />
                   <span className="project-list__name">{title}</span>
                 </a>
               </Link>
@@ -49,7 +49,7 @@ export default function Home({ allWorkData }) {
           ))}
         </ul>
 
-        <p className="align-centre"><Link href="/work"><a className="button">See more of my work</a></Link></p>
+        <p className="align-centre"><Link href="/work" prefetch={false}><a className="button">See more of my work</a></Link></p>
       </section>
     </Layout>
   )
