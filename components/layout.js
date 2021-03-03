@@ -12,6 +12,10 @@ function Layout({ headerClass, children }) {
         <meta name="language" content="en" />
         <meta name="keywords" content="front-end web developer, technical lead, UI engineer, HTML, CSS, JavaScript, London, Sydney"/>
         <meta name="description" content={siteDescription} />
+        <link rel="preload" href="https://d1nd6ebc4fb67p.cloudfront.net/fonts/raleway-regular.woff" as="font" type="font/woff" crossorigin />
+        <link rel="preload" href="https://d1nd6ebc4fb67p.cloudfront.net/fonts/raleway-medium.woff" as="font" type="font/woff" crossorigin />
+        <link rel="preload" href="https://d1nd6ebc4fb67p.cloudfront.net/fonts/raleway-bold.woff" as="font" type="font/woff" crossorigin />
+        <link rel="preload" href="https://d1nd6ebc4fb67p.cloudfront.net/fonts/raleway-semibold.woff" as="font" type="font/woff" crossorigin />
       </Head>
       <header className={headerClass}>
         <div className="container flex flex-wrap">
