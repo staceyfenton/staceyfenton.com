@@ -41,7 +41,7 @@ export default function Home({ allWorkData }) {
             <li key={id}>
               <Link href="/work/[id]" as={`/work/${id}`}>
                 <a className="project-list__link">
-                  <img src={thumbnail} alt={title} className="project-list__img" />
+                  <img src={thumbnail} alt={title} className="project-list__img" width="318" height="228" />
                   <span className="project-list__name">{title}</span>
                 </a>
               </Link>
