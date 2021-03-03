@@ -1,7 +1,6 @@
 header {
-  --font-size-small: 1.3rem;
   background-color: var(--bg-color);
-  font-size: var(--font-size-small);
+  font-size: 1.3rem;
   padding: 20px 0;
   position: sticky;
   text-transform: uppercase;
@@ -24,7 +23,7 @@ header {
   }
 
   h1 {
-    font-size: var(--font-size-small);
+    font-size: 1.3rem;
     margin-bottom: 16px;
   }
 
