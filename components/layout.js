@@ -18,14 +18,14 @@ function Layout({ headerClass, children }) {
       <header className={headerClass}>
         <div className="container flex flex-wrap">
           <h1>
-            <Link href="/" prefetch={false}><a>Stacey Fenton</a></Link>
+            <Link href="/"><a>Stacey Fenton</a></Link>
           </h1>
           <nav>
             <ul className="list-reset flex">
-              <li><Link href="/about-me" prefetch={false}><a>About</a></Link></li>
-              <li><Link href="/work" prefetch={false}><a>Work</a></Link></li>
-              <li><Link href="/speaking" prefetch={false}><a>Speaking</a></Link></li>
-              <li><Link href="/get-in-touch" prefetch={false}><a>Get in touch</a></Link></li>
+              <li><Link href="/about-me"><a>About</a></Link></li>
+              <li><Link href="/work"><a>Work</a></Link></li>
+              <li><Link href="/speaking"><a>Speaking</a></Link></li>
+              <li><Link href="/get-in-touch"><a>Get in touch</a></Link></li>
             </ul>
           </nav>
         </div>
