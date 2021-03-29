@@ -33,7 +33,7 @@ function Layout({ headerClass, children }) {
       <main>{children}</main>
       <footer>
         <div className="container flex">
-          &copy; 2020 Stacey Fenton. All Rights Reserved.
+          &copy; 2021 Stacey Fenton. All Rights Reserved.
           <ul className="flex list-reset social">
             <li>
               <a className="social__link" href="https://twitter.com/staceyfenton" target="_blank" rel="noopener" aria-label="Twitter profile">
