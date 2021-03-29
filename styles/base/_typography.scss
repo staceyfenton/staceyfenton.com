@@ -3,8 +3,8 @@
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--font-color);
+  background-color: $bg-color;
+  color: $font-color;
   font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.6rem; /* 16px */
   font-weight: 400;
@@ -18,7 +18,7 @@ main {
 }
 
 a {
-  color: var(--link-color);
+  color: $link-color;
   font-weight: bold;
   text-decoration: none;
   transition: all .2s ease;
@@ -30,7 +30,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--heading-color);
+  color: $heading-color;
   
   letter-spacing: -0.02em;
 }
@@ -50,7 +50,7 @@ h2:not([class]) {
   text-transform: uppercase;
 
   &:after {
-    background: var(--divider-color);
+    background: $divider-color;
     content: "";
     display: block;
     height: 1px;

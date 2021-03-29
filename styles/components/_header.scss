@@ -1,5 +1,5 @@
 header {
-  background-color: var(--bg-color);
+  background-color: $bg-color;
   font-size: 1.3rem;
   padding: 20px 0;
   position: sticky;
@@ -12,12 +12,12 @@ header {
   }
 
   a {
-    color: var(--primary-color);
+    color: $primary-color;
     font-weight: 500;
     letter-spacing: .2rem;
 
     &:hover {
-      color: var(--link-color);
+      color: $link-color;
       text-decoration: none;
     }
   }
@@ -45,7 +45,7 @@ header {
 }
 
 .header--home {
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
 
   + main {
     padding-top: 0;

@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
   font-size: 1.8rem;
   padding: 60px 0 40px;
 
@@ -9,7 +9,7 @@
   }
 
   &__heading {
-    color: var(--primary-color);
+    color: $primary-color;
     font-size: 3.8rem;
     font-weight: 500;
     line-height: 1.2;

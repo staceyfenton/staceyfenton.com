@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
   margin: 30px 0 0;
   padding: 30px 0;
   
@@ -41,7 +41,7 @@ footer {
     margin: 0 4px 0 8px;
 
     svg {
-      fill: var(--footer-icon-color);
+      fill: $footer-icon-color;
       transition: fill .2s ease;
       width: 28px;
       height: 28px;
@@ -58,7 +58,7 @@ footer {
 
     &:hover {
       svg {
-        fill: var(--footer-icon-hover);
+        fill: $footer-icon-hover;
       }
     }
   }
