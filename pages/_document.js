@@ -3,23 +3,24 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 class InlineStylesHead extends Head {
-  getCssLinks() {
-    return this.__getInlineStyles();
-  }
-
-  __getInlineStyles() {
-    const { files } = this.context;
-    if (!files || files.length === 0) return null;
-
-    return files.filter(file => /\.css$/.test(file)).map(file => (
-      <style
-        key={file}
-        data-href={`/_next/${file}`}
-        dangerouslySetInnerHTML={{
-          __html: readFileSync(join(process.cwd(), '.build', file), 'utf-8'),
-        }}
-      />
-    ));
+  getCssLinks(files) {
+    const { assetPrefix } = this.context;
+    const cssFiles = files.allFiles.filter((f) => f.endsWith('.css'));
+    console.log(cssFiles);
+    if (!cssFiles || cssFiles.length === 0) return null;
+    let cssStyleElements = [];
+    cssFiles.forEach((file) => {
+      cssStyleElements.push(
+        <style
+          key={file}
+          data-href={`${assetPrefix}/_next/${encodeURI(file)}`}
+          dangerouslySetInnerHTML={{
+            __html: readFileSync(join(process.cwd(), '.next', file), 'utf-8'),
+          }}
+        />
+      );
+    });
+    return cssStyleElements;
   }
 }
 
