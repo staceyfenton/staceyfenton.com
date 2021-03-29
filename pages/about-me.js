@@ -1,6 +1,7 @@
-import Layout, { siteTitle, siteDescription } from '../components/layout'
-import Meta from '../components/seo-meta'
-import { useRouter } from 'next/router'
+import Layout, { siteTitle, siteDescription } from '../components/layout';
+import Meta from '../components/seo-meta';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function AboutMe() {
   const title = `About Me | ${siteTitle}`;
@@ -28,8 +29,8 @@ export default function AboutMe() {
 
               <p>
                 I’ve had the opportunity to be involved in the development of many interesting websites over 
-                the course of my career, including ING Direct, <a href="/work/optus/">Optus</a>, <a href="/work/vodafone-group-plc-annual-report-2015/">Vodafone</a>, <a href="/work/coca-cola-hellenic-bottling-company/">Coca-Cola Hellenic</a> and <a href="/work/gsk/">GSK</a>. 
-                The <a href="/work/">work section</a> of this website showcases 
+                the course of my career, including ING Direct, <Link href="/work/optus/"><a>Optus</a></Link>, <Link href="/work/vodafone-group-plc-annual-report-2015/"><a>Vodafone</a></Link>, <Link href="/work/coca-cola-hellenic-bottling-company/"><a>Coca-Cola Hellenic</a></Link> and <Link href="/work/gsk/"><a>GSK</a></Link>. 
+                The <Link href="/work/"><a>work section</a></Link> of this website showcases 
                 a selection of projects I have been involved with over the last few years.
               </p>
             </div>
@@ -50,7 +51,7 @@ export default function AboutMe() {
                 <li>CSS (including SASS)</li>
                 <li>JavaScript (vanilla / ES6)</li>
                 <li>React (standalone, Next.js)</li>
-                <li>Infrastructure - AWS, IaC using Terraform</li> 
+                <li>Infrastructure - AWS, IaC using Terraform, Cloudflare</li> 
                 <li>CMS - WordPress, Episerver</li>
                 <li>Version control - Git, Mercurial, SVN</li>
                 <li>Code Quality - ESlint, stylelint, SonarQube</li>
@@ -58,7 +59,7 @@ export default function AboutMe() {
 
               <h4>Workflow</h4>
               <ul>
-                <li>CI/CD - TeamCity, TravisCI</li>
+                <li>CI/CD - TeamCity, TravisCI, Github Actions</li>
                 <li>Build tools including Webpack, npm scripts, Gulp and Grunt</li>
                 <li>Automated testing - Jest, SauceLabs, Applitools, Lighthouse</li>
               </ul>
