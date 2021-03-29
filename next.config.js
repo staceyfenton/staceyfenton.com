@@ -1,3 +1,11 @@
+const { createSecureHeaders } = require("next-secure-headers");
+
+module.exports = {
+  async headers() {
+    return [{ source: "/(.*)", headers: createSecureHeaders() }];
+  },
+};
+
 // const isProd = process.env.NODE_ENV === 'production'
 
 // module.exports = {
