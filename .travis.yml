@@ -9,15 +9,6 @@ cache:
   directories:
   - node_modules
 deploy:
-  - provider: pages
-    skip_cleanup: true
-    local_dir: out
-    on:
-      branch: v4
-    target_branch: master
-    fqdn: staceyfenton.com
-    github_token:
-      secure: U5+33YTRQWY0nC6updjBkxAOqEQ3pOAWoiHsNezPVfaIlUmta/mAjcCfvjg/0J+rh9AaspA1fbq1gTOMWnbPx7Lmwa7nvtop6Y2xDB0jhCJanBk+IxAlLZQJQgSMJ/vc9Te9g9f8BcfvbfUdkfzo7Ji7kURR3T0EcXoz6VQXrj5X6pg+JTDGILKuECE0WBBoQS1hFGY2E0NDn2peWsxUdfvSWj3+RtmGINYiRlsG/5s8qlky9tmsVQ9ZQ53b1X38SUSzCa8XU9aVMMELPiCqQy95yfTmg87pUzH4RiB9Q5BOqr2Oi+XUuGDCcqxvWwaMYGVqqI9MEo+z13zN96EaO+J9gTG9GLfBTQ9g5/5laFu2MB+Et7TDE8I510oZgvyUaL/DVyaT89HpHkvcDjQz3pu8m66Cr9u7bd6yM/HL0i/zsnMsYR++6uih67uxYWPYqdmz3tavOBRnfV5yaWqfaPlBlzW/NNvsxXtxprfrvwifJTMIneUL9BWosQMmGaCx7CYzHkCfPSyEoEnO0KpTzUPPuy144t0bou88xw4RPA9T18m9mpS4PBfom0n+5PBjMDQn9W3z6xYNG25SG1Q5YC9Q4P0S3qGHZXJlzrYjSV0lFXl/Q8JQZ1Am0PX2hpkHI2tZLCT7l1qYsA4tt62ThCrBuPMWsg4Tas7bZSO5Q1Y=
   - provider: s3
     skip_cleanup: true
     local_dir: out/_next
