@@ -1,5 +1,5 @@
 ---
-title: 'Coca-Cola Hellenic Bottling Company'
+title: 'Syngenta Annual Report 2015'
 date: '2015-01-08'
 thumbnail: 'https://d1nd6ebc4fb67p.cloudfront.net/wp-content/uploads/2016/09/05211604/thumb-syngenta2015.jpg'
 ---

@@ -6,4 +6,4 @@ Tech specs:
 
 * Built with [Next.js](https://nextjs.org)
 * Sass CSS pre-processing
-* [Travis CI](https://travis-ci.org/) for automated deployments
+* Github Actions and [Vercel](https://vercel.com/) for automated deployments
