@@ -1,0 +1,91 @@
+{
+  "short_name": "Stacey Fenton",
+  "name": "Stacey Fenton - Front-End / UI Engineer and Technical Lead",
+  "icons": [
+    {
+      "src": "/images/icons/android-icon-36x36.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "density": "0.75"
+    },
+    {
+      "src": "/images/icons/android-icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "density": "1.0"
+    },
+    {
+      "src": "/images/icons/android-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/images/icons/android-icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": "2.0"
+    },
+    {
+      "src": "/images/icons/android-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "3.0"
+    },
+    {
+      "src": "/images/icons/android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons/android-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/images/icons/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#f0f0f0",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#f0f0f0",
+  "shortcuts": [
+    {
+      "name": "About Stacey Fenton",
+      "short_name": "About",
+      "description": "Stacey is a Technical Lead and Front-End Developer based in London, United Kingdom.",
+      "url": "/about?source=pwa",
+      "icons": [
+        {
+          "src": "/images/android-icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contact Stacey Fenton",
+      "short_name": "Get in touch",
+      "description": "You can get in touch with Stacey via email or contact form",
+      "url": "/get-in-touch?source=pwa",
+      "icons": [
+        {
+          "src": "/images/android-icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "description": "Stacey is a Technical Lead and Front-End Developer based in London, United Kingdom, with over 15 years commercial experience.",
+  "screenshots": [
+    {
+      "src": "/images/homepage-screenshot.png",
+      "type": "image/png",
+      "sizes": "620x1106"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ module.exports = {
   async headers() {
     return [{ source: "/(.*)", headers: createSecureHeaders() }];
   },
+  trailingSlash: true
 };
 
 // const isProd = process.env.NODE_ENV === 'production'

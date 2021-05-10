@@ -9,10 +9,15 @@ function Layout({ headerClass, children }) {
   return (
     <div className="site-wrapper">
       <Head>
-        <link rel="icon" type="image/png" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACFElEQVRYhcXX3YtOURQG8N+84yvfoTe5EMokhREpNUW4QGpufczF5IK/w5XkD3ClcOnaR3NFYTAmSiSSi5GPUtPQxDQ+L9Z+67xizj7MO+9Tp7P3bu21n7PWPs9euwOLtRG1di4Osyra17AdB9CN1ZiPSXzGezzBAAbxo8xhh/wU9OA0Nmfab8JImVFuBE7gjOaUfcNb8eULsbKCv0oE9uFsoT+Y+rdF6BuYI9LSi/5cAmUpqOEuNqT+ZZxUntu6iMz4/xLowoPUnsR6jJU5rYKy33BdoT0y3YvnECiGemmG/bQTeFlor8CemSbwCg8L/XPydSALnZhbYvMMRwXZBegTqXkktKDlBN6IVBxM9p3YhWP4gqf43koCRBRuYCeWp7FF2I/D+JiI/GwVAUJ2L6bFtmFeGl+CQ4nMY7xrFQEi1EO4gK/YIiSYOAv6hAIOy4xGVQINTOAWLmE2topNWsNesUnv5DiqchxPhY04n94N9OLmTBGQ/AwUSAyLaMwYAaJouVror8XoVBOmW9vvaRanVWUTWlGUFn1O/C+BumplVk/B54SMmrCMwG5c/83x31DXXLpd0Vyy/RE5X7dDbKwXuIb74mwYE2q4RpwNx7EszfmEUxm+K4W3Kz1lGMURGeGnXAk/iItH4wIyFcaFMvbjec7i5OtATVTG3eLfrqexcbwWt6EhGbv+Xwm0DG2/nLadwC/mhGJDka8IDwAAAABJRU5ErkJggg==" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96" />
+        <link rel="apple-touch-icon" href="/images/icons/apple-icon-180x180.png" />
         <meta name="language" content="en" />
         <meta name="keywords" content="front-end web developer, technical lead, UI engineer, HTML, CSS, JavaScript, London, Sydney"/>
         <meta name="description" content={siteDescription} />
+        <meta name="theme-color" content="#f0f0f0" />
       </Head>
       <Preload />
       <header className={headerClass}>
@@ -53,6 +58,18 @@ function Layout({ headerClass, children }) {
           </ul>
         </div>
       </footer>
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.addEventListener("load", () => {
+              if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("service-worker.js");
+              }
+            });
+          `,
+        }}
+      ></script>
     </div>
   )
 }
