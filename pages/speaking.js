@@ -21,7 +21,7 @@ export default function Speaking() {
             <p>
               Below is a list of my past and upcoming speaking engagements. If you would like to invite me to speak at your event please <Link href="/get-in-touch"><a>get in touch</a></Link>.
             </p>
-            <h3>Upcoming speaking events</h3>
+            {/* <h3>Upcoming speaking events</h3>
             <ul className="list-reset">
               <li>
                 <p>
@@ -30,7 +30,7 @@ export default function Speaking() {
                   London, UK
                 </p>
               </li>
-            </ul>
+            </ul> */}
             
             <h3>Past appearances</h3>
             <ul className="list-reset">
