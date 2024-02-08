@@ -19,7 +19,7 @@ export default function Speaking() {
           <div className="body-content">
             <h2>Speaking</h2>
             <p>
-              Below is a list of my past and upcoming speaking engagements. If you would like to invite me to speak at your event please <Link href="/get-in-touch"><a>get in touch</a></Link>.
+              Below is a list of my past and upcoming speaking engagements. If you would like to invite me to speak at your event please <Link href="/get-in-touch">get in touch</Link>.
             </p>
             {/* <h3>Upcoming speaking events</h3>
             <ul className="list-reset">

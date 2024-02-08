@@ -23,14 +23,14 @@ function Layout({ headerClass, children }) {
       <header className={headerClass}>
         <div className="container flex flex-wrap">
           <h1>
-            <Link href="/"><a>Stacey Fenton</a></Link>
+            <Link href="/">Stacey Fenton</Link>
           </h1>
           <nav>
             <ul className="list-reset flex">
-              <li><Link href="/about-me"><a>About</a></Link></li>
-              <li><Link href="/work"><a>Work</a></Link></li>
-              <li><Link href="/speaking"><a>Speaking</a></Link></li>
-              <li><Link href="/get-in-touch"><a>Get in touch</a></Link></li>
+              <li><Link href="/about-me">About</Link></li>
+              <li><Link href="/work">Work</Link></li>
+              <li><Link href="/speaking">Speaking</Link></li>
+              <li><Link href="/get-in-touch">Get in touch</Link></li>
             </ul>
           </nav>
         </div>

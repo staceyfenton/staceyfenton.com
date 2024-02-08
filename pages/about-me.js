@@ -28,8 +28,8 @@ export default function AboutMe() {
 
               <p>
                 I’ve had the opportunity to be involved in the development of many interesting websites over 
-                the course of my career, including <Link href="/work/comparethemarket/"><a>Compare the Market</a></Link>, ING Direct, <Link href="/work/optus/"><a>Optus</a></Link>, <Link href="/work/coca-cola-hellenic-bottling-company/"><a>Coca-Cola Hellenic</a></Link> and <Link href="/work/gsk/"><a>GSK</a></Link>. 
-                The <Link href="/work/"><a>work section</a></Link> of this website showcases 
+                the course of my career, including <Link href="/work/comparethemarket/">Compare the Market</Link>, ING Direct, <Link href="/work/optus/">Optus</Link>, <Link href="/work/coca-cola-hellenic-bottling-company/">Coca-Cola Hellenic</Link> and <Link href="/work/gsk/">GSK</Link>. 
+                The <Link href="/work/">work section</Link> of this website showcases 
                 a selection of projects I have been involved with over the last few years.
               </p>
             </div>

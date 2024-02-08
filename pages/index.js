@@ -30,7 +30,7 @@ export default function Home({ allWorkData }) {
           <p>
             I'm a technical lead and front‑end developer originally from Sydney, Australia, currently based in London, UK.
           </p>
-          <p><Link href="/about-me"><a className="button">More about me</a></Link></p>
+          <p><Link href="/about-me" className="button">More about me</Link></p>
         </div>
       </section>
 
@@ -39,17 +39,15 @@ export default function Home({ allWorkData }) {
         <ul className="list-reset grid">
           {allWorkData.slice(0, 6).map(({ id, thumbnail, title }) => (
             <li key={id}>
-              <Link href="/work/[id]" as={`/work/${id}`}>
-                <a className="project-list__link">
-                  <img src={thumbnail} alt={title} className="project-list__img" width="318" height="228" loading="lazy" />
-                  <span className="project-list__name">{title}</span>
-                </a>
+              <Link href="/work/[id]" as={`/work/${id}`} className="project-list__link">
+                <img src={thumbnail} alt={title} className="project-list__img" width="318" height="228" loading="lazy" />
+                <span className="project-list__name">{title}</span>
               </Link>
             </li>
           ))}
         </ul>
 
-        <p className="align-centre"><Link href="/work"><a className="button">See more of my work</a></Link></p>
+        <p className="align-centre"><Link href="/work" className="button">See more of my work</Link></p>
       </section>
     </Layout>
   )

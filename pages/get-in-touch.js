@@ -62,12 +62,12 @@ export default function GetInTouch() {
 
             <form className="contact-form" onSubmit={handleOnSubmit}>
               <label htmlFor="name">Your name</label>
-              <input type="text" name="name" id="name" required pattern="[a-zA-Z0-9 ]+" className="contact-form__input" />
+              <input type="text" name="name" id="name" required pattern="[a-zA-Z0-9 ]+" className="contact-form__input" autoComplete="name" />
 
               <label htmlFor="email">Your email address</label>
-              <input type="email" name="_replyto" id="email" className="contact-form__input" required />
+              <input type="email" name="_replyto" id="email" className="contact-form__input" required autoComplete="email" />
 
-              <input type="hidden" name="_subject" value="New contact form submission" />
+              <input type="hidden" name="_subject" id="subject" value="New contact form submission" />
 
               <label htmlFor="message">Your message</label>
               <textarea name="message" id="message" className="contact-form__input contact-form__textarea" required></textarea>

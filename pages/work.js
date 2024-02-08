@@ -32,11 +32,9 @@ export default function Work({ allWorkData }) {
             <ul className="list-reset grid">
               {allWorkData.map(({ id, thumbnail, title }) => (
                 <li key={id}>
-                  <Link href="/work/[id]" as={`/work/${id}`}>
-                    <a className="project-list__link">
-                      <img src={thumbnail} alt={title} className="project-list__img" loading="lazy" width="287" height="206" />
-                      <span className="project-list__name">{title}</span>
-                    </a>
+                  <Link href="/work/[id]" as={`/work/${id}`} className="project-list__link">
+                    <img src={thumbnail} alt={title} className="project-list__img" loading="lazy" width="287" height="206" />
+                    <span className="project-list__name">{title}</span>
                   </Link>
                 </li>
               ))}
