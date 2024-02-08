@@ -2,6 +2,8 @@ import Layout, { siteTitle, siteDescription } from '../components/layout';
 import Meta from '../components/seo-meta';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Image from 'next/image';
+import headshot from '../public/images/stacey-headshot.jpg';
 
 export default function AboutMe() {
   const title = `About Me | ${siteTitle}`;
@@ -20,22 +22,33 @@ export default function AboutMe() {
           <div className="grid grid--two-col-layout">
             <div>
               <p>
-                I have 15 years experience working as a web developer, specialising in building modern, 
-                responsive and accessible user interfaces. I've worked across a variety of organisations, 
+                With nearly two decades of experience in web development, I specialize in crafting contemporary, responsive, 
+                and inclusive user interfaces. I've worked across a variety of organisations, 
                 from small digital agencies and startups to large corporate enterprises. 
                 I’m currently working as a Software Engineering Manager at Vodafone UK.
               </p>
 
               <p>
-                I’ve had the opportunity to be involved in the development of many interesting websites over 
-                the course of my career, including <Link href="/work/comparethemarket/">Compare the Market</Link>, ING Direct, <Link href="/work/optus/">Optus</Link>, <Link href="/work/coca-cola-hellenic-bottling-company/">Coca-Cola Hellenic</Link> and <Link href="/work/gsk/">GSK</Link>. 
+                Throughout my career, I've contributed to an array of interesting web applications, lending my expertise to 
+                renowned brands such as <Link href="/work/comparethemarket/">Compare the Market</Link>, ING Direct, 
+                <Link href="/work/optus/">Optus</Link>, <Link href="/work/coca-cola-hellenic-bottling-company/">Coca-Cola Hellenic</Link> 
+                and <Link href="/work/gsk/">GSK</Link>. 
                 The <Link href="/work/">work section</Link> of this website showcases 
                 a selection of projects I have been involved with over the last few years.
               </p>
             </div>
 
             <div>
-              <p><img src="/images/stacey-headshot.jpg" alt="A headshot of Stacey Fenton" /></p>
+              <p>
+                <Image 
+                  src={headshot} 
+                  alt="A headshot of Stacey Fenton" 
+                  style={{
+                    width: '100%',
+                    height: 'auto'
+                  }}
+                />
+               </p>
             </div>
 
             <div>
@@ -54,14 +67,14 @@ export default function AboutMe() {
                 <li>Infrastructure - AWS, IaC using Terraform, Cloudflare</li> 
                 <li>CMS - WordPress, Episerver</li>
                 <li>Version control - Git, Mercurial, SVN</li>
-                <li>Code Quality - ESlint, stylelint, SonarQube</li>
+                <li>Code Quality - ESlint, stylelint, SonarQube, Prettier</li>
               </ul>
 
               <h4>Workflow</h4>
               <ul>
-                <li>CI/CD - TeamCity, TravisCI, Github Actions</li>
+                <li>CI/CD - TeamCity, TravisCI, Github Actions, Azure DevOps</li>
                 <li>Build tools including Webpack, npm scripts, Gulp and Grunt</li>
-                <li>Automated testing - Jest, SauceLabs, Applitools, Lighthouse</li>
+                <li>Automated testing - Jest, SauceLabs, Applitools, Lighthouse, Cypress</li>
               </ul>
 
               <h4>Design</h4>
