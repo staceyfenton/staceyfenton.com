@@ -1,5 +1,3 @@
-const { createSecureHeaders } = require("next-secure-headers");
-
 module.exports = {
   output: 'export',
   trailingSlash: true,
