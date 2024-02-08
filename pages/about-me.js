@@ -22,7 +22,7 @@ export default function AboutMe() {
           <div className="grid grid--two-col-layout">
             <div>
               <p>
-                With nearly two decades of experience in web development, I specialize in crafting contemporary, responsive, 
+                With nearly two decades of experience in web development, I specialise in crafting contemporary, responsive, 
                 and inclusive user interfaces. I've worked across a variety of organisations, 
                 from small digital agencies and startups to large corporate enterprises. 
                 I’m currently working as a Software Engineering Manager at Vodafone UK.
@@ -30,9 +30,7 @@ export default function AboutMe() {
 
               <p>
                 Throughout my career, I've contributed to an array of interesting web applications, lending my expertise to 
-                renowned brands such as <Link href="/work/comparethemarket/">Compare the Market</Link>, ING Direct, 
-                <Link href="/work/optus/">Optus</Link>, <Link href="/work/coca-cola-hellenic-bottling-company/">Coca-Cola Hellenic</Link> 
-                and <Link href="/work/gsk/">GSK</Link>. 
+                renowned brands such as <Link href="/work/comparethemarket/">Compare the Market</Link>, ING Direct, <Link href="/work/optus/">Optus</Link>, <Link href="/work/coca-cola-hellenic-bottling-company/">Coca-Cola Hellenic</Link> and <Link href="/work/gsk/">GSK</Link>. 
                 The <Link href="/work/">work section</Link> of this website showcases 
                 a selection of projects I have been involved with over the last few years.
               </p>
