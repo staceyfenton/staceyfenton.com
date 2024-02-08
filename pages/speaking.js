@@ -2,6 +2,8 @@ import Meta from '../components/seo-meta';
 import { useRouter } from 'next/router';
 import Layout, { siteTitle, siteDescription } from '../components/layout';
 import Link from 'next/link';
+import Image from 'next/image';
+import widPhoto from '../public/images/women-in-digital-event.jpg';
 
 export default function Speaking() {
   const title = `Speaking | ${siteTitle}`;
@@ -34,6 +36,26 @@ export default function Speaking() {
             
             <h3>Past appearances</h3>
             <ul className="list-reset">
+              <li>
+                <strong>Women in Digital: Coversations with Vodafone</strong><br />
+                23rd March 2023
+                <p>
+                  I was one of the panelists at this event hosted by hackajob and Vodafone with over 70 people in attendance. 
+                  During the panel discussion, I had the opportunity to share my personal experiences as a woman in this field and 
+                  offer insights on how organisations can create an inclusive culture that empowers and supports women.
+                </p>
+
+                <p>
+                  <Image 
+                    src={widPhoto} 
+                    alt="Photo of speaker panel at Women in Digital event" 
+                    style={{
+                      width: '100%',
+                      height: 'auto'
+                    }}
+                  />
+                </p>
+              </li>
               <li>
                 <strong>London Web Performance Group</strong><br />
                 14th April 2020
